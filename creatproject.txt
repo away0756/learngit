@@ -1,0 +1,22 @@
+laravel创建项目流程
+一.创建虚拟主机
+二.修改hosts
+sudo vi /etc/hosts 添加127.0.0.1  demo.xxx.com   //查看hosts文件 cat /etc/hosts
+三.安装composer
+四.创建项目
+composer create-project --prefer-dist laravel/laravel demo.xxx.com
+创建项目前删除 /data/wwwroot/demo.xxx.com
+五.创建好以后进去安装扩展
+composer install
+六.修改conf
+/usr/local/nginx/conf/vhost/demo.xxx.com.conf
+修改root路径,后面再加上public,也就是.com/public;
+七.最后进入项目目录修改./storage和./cache权限
+sudo chmod -R 777 ./storage
+sudo chmod  -R 777 ./bootstrap/cache
+
+
+
+
+
+
