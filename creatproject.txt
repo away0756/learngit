@@ -15,8 +15,8 @@ composer install
 sudo chmod -R 777 ./storage
 sudo chmod  -R 777 ./bootstrap/cache
 
-
-
-
-
-
+---------------------------------------------------------------------------
+配置数据库
+复制 .env.example  为 .env
+php artisan
+php artisan key:generate //生成key
