@@ -4,7 +4,7 @@ laravel创建项目流程
 sudo vi /etc/hosts 添加127.0.0.1  demo.xxx.com   //查看hosts文件 cat /etc/hosts
 三.安装composer
 四.创建项目
-composer create-project --prefer-dist laravel/laravel demo.xxx.com
+composer create-project laravel/laravel demo.blog.com --prefer-dist "5.5.*"
 创建项目前删除 /data/wwwroot/demo.xxx.com
 五.创建好以后进去安装扩展
 composer install
@@ -20,3 +20,5 @@ sudo chmod  -R 777 ./bootstrap/cache
 复制 .env.example  为 .env
 php artisan
 php artisan key:generate //生成key
+
+
